@@ -1,0 +1,12 @@
+def p=
+{  sourceFilePath="/home/akash/bootcamp/Exercise/Groovy/img.jpg"
+    destinationFilePath="/home/akash/bootcamp/Exercise/Groovy/img-copy.jpg"
+    sourceFile=new File(sourceFilePath)
+    destinationFile=new File(destinationFilePath)
+    sourceFile.eachByte
+    {byte1->
+        destinationFile.append(byte1)
+    }
+}
+
+p()

@@ -1,0 +1,13 @@
+<html>
+<script type="text/javascript">
+function area(){
+var radius=prompt("enter the radius","");
+if(isNaN(radius)){
+break;
+}
+var result=3.14*radius*radius;
+document.write(result);
+}
+</script>
+<body onLoad="area()"></body>
+</html>

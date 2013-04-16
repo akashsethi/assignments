@@ -1,0 +1,17 @@
+def lst=['akash',2,'kapil','priyanka',4,'akash']
+println lst.get(3)//print priyanka
+println lst.getAt(0..2)//print sublist
+println lst.first() //print first element
+println lst.last() //print last element
+println lst.head() //get the head of the list
+println lst.tail() //get all the element except first
+println lst.size() //return the no of element on the list
+println lst.unique();//removes duplicates
+lst<<'sethi' //add element to the last
+lst.add('akki')//return true if element added
+lst.pop() //removes the last element of the list
+println lst //print the list
+lst.clear();//clear the list
+println lst
+def list_demo=['ant', 'buffalo', 'cat', 'dinosaur']
+list_demo.findAll{ls->ls.size()>4} //return the words with size more than 4

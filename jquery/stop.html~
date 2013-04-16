@@ -1,0 +1,19 @@
+<html>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#p1").click(function(){
+$("#p2").slideDown(3000);
+});
+$("button").click(function(){
+$("#p2").stop();
+});
+});
+</script>
+<body>
+<div><button>stop</button></div>
+<div id="p1" style="width:100px;background-color:red">hello akash</div>
+<div id="p2" style="width:100px;height:50px;background-color:red;display:none">hello sethi</div>
+
+</body>
+</html>

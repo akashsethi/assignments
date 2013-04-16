@@ -1,0 +1,8 @@
+List lst=new ArrayList()
+println lst.getClass().name;
+lst=['akash','sethi','puneet','behl','intelligrape','sethi','puneet']
+println lst;
+//removing duplicates
+
+lst.unique()
+println lst

@@ -1,0 +1,61 @@
+a)
+if('test') { println "test evaluated to true inside if" }
+else{println "test evaluated to false inside if"}
+
+OUTPUT
+test evaluated to true inside if
+
+b)
+if('null') { println "test evaluated to true inside if" }
+else{println "test evaluated to false inside if"}
+
+OUTPUT
+test evaluated to true inside if
+
+
+c)
+if(null) { println "test evaluated to true inside if" }
+else{println "test evaluated to false inside if"}
+
+OUTPUT
+test evaluated to false inside if
+
+
+d)
+if(100) { println "test evaluated to true inside if" }
+else{println "test evaluated to false inside if"}
+
+OUTPUT
+test evaluated to true inside if
+
+
+e)
+if('0') { println "test evaluated to true inside if" }
+else{println "test evaluated to false inside if"}
+
+OUTPUT
+test evaluated to true inside if
+
+
+f)
+List list = new ArrayList() 
+if(list) { println "test evaluated to true inside if" }
+else{println "test evaluated to false inside if"}
+
+OUTPUT
+test evaluated to false inside if
+
+
+g)
+
+List list = new ArrayList()
+list.add(null)
+list.add(null)
+list.add(null)
+if(list) { println "test evaluated to true inside if" }
+else{println "test evaluated to false inside if"}
+
+
+OUTPUT
+test evaluated to true inside if
+

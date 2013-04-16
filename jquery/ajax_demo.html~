@@ -1,0 +1,13 @@
+<html>
+<script src=jquery.js></script>
+<script type="text/javascript">
+$("document").ready(function(){
+$("button").click(function(){
+$("#div1").load("demo_text.txt #p1");
+});
+});
+</script>
+<body>
+<div id="div1">hello akash</div>
+</body>
+</html>

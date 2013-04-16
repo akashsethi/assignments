@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+var name=prompt("enter your name:","name");
+if(name){
+alert("your name is"+name);
+}
+else{
+
+alert("you didnt enter any name");
+}
+var x=5;
+y=x+5;
+document.write("hello \ world");
+</script>
+</head>
+</html>

@@ -1,0 +1,21 @@
+//map cheat
+def mp=['akash':25,'kapil':30,'priyanka':19,'sanju':26,'priyanka':20,'c++':'language'] //create a LinkedHashMap 
+println mp.getClass() //get class of mp
+map=[:] //create an empty map
+map.putAll(mp) //insert map into other
+println map.priyanka;
+try{
+println map.c++
+}
+catch(Exception ex){println "value of c++ is not printed"}
+println map.'c++'
+println map //print map
+println map.get('sanju') //return value associated with a key
+println map.get(26) //return value associated with a key  
+println map.containsKey('priyanka') //check a particular key
+println map.containsValue(19) //check for a particular value
+println map.values() //return a set of value in map
+def sum={
+a,b->println a+b
+}
+sum(5,6)

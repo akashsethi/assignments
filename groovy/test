@@ -1,0 +1,12 @@
+class tests{
+def name,age,address;
+void get(name,age,address){
+this.name=name;
+this.age=age;
+this.address=address;
+}
+void show(){println name +"\t"+age+"\t"+address}
+}
+def t=new tests();
+t.get("akash",25,"sirsa")
+t.show();

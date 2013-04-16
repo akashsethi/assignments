@@ -1,0 +1,27 @@
+def mergeFilesClosure=
+{directoryPath, targetFilePath->
+    List fileNames=[]
+    File newFile=new File(targetFilePath)
+    def dir=new File(directoryPath)
+    
+    dir.eachFile
+    {
+        file->
+        if(file.isFile())
+        {
+            fileNames.add( file.canonicalPath)
+        }
+    }
+    fileNames.each
+    {
+        fileName->
+        new File(fileName).eachLine
+        {line->
+            newFile.append(line+"\n")
+        }
+    }
+                 
+    
+}
+mergeFilesClosure("/home/akash/bootcamp","/home/akash/bootcamp/Exercise/Groovy/newfile.txt")
+                

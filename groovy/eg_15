@@ -1,0 +1,9 @@
+String name= "akash"
+lst=[]
+char[] ch=name.toCharArray()
+for(i=0;i<name.size();i++){
+lst<<ch[i]
+}
+for(i in 0..4){
+println Collections.frequency(lst,lst.get(i))
+}

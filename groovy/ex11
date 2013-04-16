@@ -1,0 +1,14 @@
+def p1=
+{   File newFile= new File("/home/akash/bootcamp/Exercise/Groovy/newFile2")
+    new File("/home/akash/bootcamp/Exercise/Groovy/exercise-questions.txt").eachLine
+    {line-> 
+        List whiteSpaces=[" ", "\n", "\t"]
+         line.each
+        {character->
+            if(!whiteSpaces.contains(character))
+           newFile.append( character) 
+        }
+    }
+}
+
+p1()

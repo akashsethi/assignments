@@ -1,0 +1,8 @@
+class pattern{
+public static void main(String...ag){
+for(int i=0;i<4;i++){
+int k=2.power(i)
+k.times{print "*"}
+print "\n";
+}
+}}

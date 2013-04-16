@@ -1,0 +1,5 @@
+def m=['akash':25,'priyanka':19,'ankit':26,'sneha':20,'aahan':5] 
+m.put('bhumi',6)
+m.each{println it
+println "\n"
+}

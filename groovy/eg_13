@@ -1,0 +1,5 @@
+lst=['a'..'z']
+for(i in 0..25){
+if(lst.get(0).get(i)>'h')
+print lst.get(0).get(i)+"\n"
+}

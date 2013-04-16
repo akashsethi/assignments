@@ -1,0 +1,20 @@
+<script type="text/javascript">
+
+var radius= prompt("Please enter radius:", "");
+if (radius == null)
+{
+  alert("You Pressed Cancel. You chose not to answer this question.");
+}
+else{
+age = parseInt(age);
+if ( isNaN(age)){
+  alert("You entered invalidly. You did not enter a number.");
+}
+else if ( age>= 18) {
+  alert("You are old enough to vote");
+}
+else {
+  alert("At this time, sorry, you are not old enough to vote");
+}
+}
+</script>

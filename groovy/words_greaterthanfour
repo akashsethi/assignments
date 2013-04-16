@@ -1,0 +1,7 @@
+List lst=['cow','lion','horse','monkey','dinosaur']
+print lst.getClass()
+print lst.findAll{l-> l.size()>4}
+
+def words = ['ant', 'buffalo', 'cat', 'dinosaur']
+println words.getClass()
+print words.findAll{ w -> w.size() > 4 }

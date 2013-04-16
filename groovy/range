@@ -1,0 +1,10 @@
+def range=4..9;
+println range instanceof java.util.List
+println range.contains(10)
+def ranges=2..<19
+println ranges[2]
+println ranges
+//we can use range to iterate
+(1..10).each{i->
+println "hello $i"
+}

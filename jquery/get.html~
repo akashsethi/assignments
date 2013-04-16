@@ -1,0 +1,23 @@
+<html>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+alert($("#p1").text());
+});
+$("#b2").click(function(){
+alert($("#p1").html());
+});
+$("#b3").click(function(){
+alert($("#p2").val());
+});
+});
+</script>
+<body>
+<p id="p1">hello<b> akash</b></p>
+<p id="p2"><input type="text" value="akash sethi"/></p>
+<button id="b1">get_text</button>
+<button id="b2">get_html</button>
+<button id="b3">get_val</button>
+</body>
+</html>

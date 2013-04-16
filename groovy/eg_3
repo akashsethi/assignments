@@ -1,0 +1,5 @@
+//Given two lists [11, 12, 13, 14] and [13, 14, 15], how would we obtain the list of items from the first that are not in the second?
+lst=[11,12,13,14]
+lst1=[13,14,15]
+lst.removeAll(lst1)
+lst

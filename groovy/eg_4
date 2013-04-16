@@ -1,0 +1,4 @@
+//to find common element
+list_1=[11,12,13,14];
+list_2=[12,13,14];
+println list_1.intersect(list_2)

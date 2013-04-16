@@ -1,0 +1,4 @@
+def containss={
+lst,el->return lst.contains(el)
+}
+print( containss([1,2,3,4], 3))

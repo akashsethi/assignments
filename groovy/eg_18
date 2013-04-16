@@ -1,0 +1,6 @@
+def m1=['akash':25,'priyanka':19,'ankit':26,'sneha':20,'aahan':5] 
+def m2=['sethi':25,'kamboj':19,'soni':26,'munjal':20,'sethi':5] 
+def m=m1+m2
+m.each{
+println it
+}

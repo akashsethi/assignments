@@ -1,0 +1,23 @@
+<html>
+<body bgcolor="grey">
+<div style="margin-top:200px;margin-left:500px">
+<div id="p1" style="background-image:url('clock.png');background-repeat:no-repeat;width:150px;height:40px;padding:52px;padding-left:31px;color:white"></div>
+<script type="text/javascript">
+var start_time=setInterval(function(){
+demo()
+},2000);
+function demo(){
+var time=new Date();
+var time_locale=time.toLocaleTimeString();
+document.getElementById("p1").innerHTML=time_locale;
+}
+function pause(){
+clearInterval(start_time);
+}
+</script>
+<div style="padding-left:32px">
+<button type="button" onClick="pause()">stop</button>
+</div>
+</div>
+</body>
+</html>

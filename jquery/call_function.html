@@ -1,0 +1,16 @@
+<html>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#p1").hide(4000,function(){
+alert("hide ho gya paaji");
+});
+});
+});
+</script>
+<body>
+<button>start</button>
+<div id="p1" style="width:1024px;height:568px;background-color:red;"></div>
+</body>
+</html>

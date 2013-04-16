@@ -1,0 +1,6 @@
+lst=[1..10]
+println lst.get(0).getClass()
+println lst.get(0).get(0)
+println lst.get(0).get(1)
+int size=lst.get(0).size()
+println lst.get(0).get(size-1)

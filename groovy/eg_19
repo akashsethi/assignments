@@ -1,0 +1,3 @@
+def map=['akash':25,'priyanka':19,'ankit':26,'sneha':20,'aahan':5] 
+println map.class //output null
+println map.getClass() 

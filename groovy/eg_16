@@ -1,0 +1,20 @@
+class demo{
+List lstt=new ArrayList()
+void push(ob){lstt.add(0,ob)
+}
+def pop(){
+lstt.remove(lstt.size()-1)
+}
+def top(){
+print lstt.get(0)
+}
+def display(){
+println lstt;
+}
+}
+def d=new demo();
+d.push("akash")
+d.push("sethi")
+d.pop()
+d.display()
+d.top()

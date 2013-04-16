@@ -1,0 +1,18 @@
+def writeOddsClosure=
+{    
+    sourceFilePath="/home/akash/bootcamp/Exercise/Groovy/exercise-questions.txt"
+    destinationFilePath="/home/akash/bootcamp/Exercise/Groovy/odds.txt"
+    int index=1
+    File oddsFile=new File(destinationFilePath)
+    File f=new File(sourceFilePath)
+   // print "hello"
+    f.eachLine{line-> 
+        if(index%2==1)
+        {    oddsFile.append(index+": "+line+'\n')
+            
+            
+        }
+        index++
+    }
+}               
+writeOddsClosure()

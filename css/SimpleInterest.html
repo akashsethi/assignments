@@ -1,0 +1,17 @@
+<html>
+<script type="text/javascript">
+function getNum() {
+  var userInput = [];
+  var prompts = ["enter amount","enter rate","enter time"];
+  for( var i = 0; i < prompts.length; i++ ) {
+    userInput[i] = prompt(prompts[i]);
+	if(isNaN(userInput[i])){
+break;
+}
+  }
+var si=userInput[0]*userInput[1]*userInput[2];
+document.write(si);
+}
+</script>
+<body onLoad="getNum()"></body>
+</html>

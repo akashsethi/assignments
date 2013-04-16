@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$(".slide").mouseenter(function(){
+$(".slider").slideToggle();
+});
+$(".slide").mouseleave(function(){
+$(".slider").slideUp();
+});
+});
+</script>
+</head>
+<body>
+<div class="slide" style="width:200px;height:20px;background-color:pink">Apparel</div>
+<div class="slider" style="width:200px;display:none;background-color:pink">Men</div>
+</body>
+</html>

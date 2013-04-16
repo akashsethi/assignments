@@ -1,0 +1,15 @@
+lst=[1..100]
+for(i in 0..99){
+if((lst.get(0).get(i)%3==0)&&(lst.get(0).get(i)%5!=0)){
+println 'fizz'+'\n'
+}
+else if((lst.get(0).get(i)%5==0)&&(lst.get(0).get(i)%3!=0)){
+println 'buzz'+"\n"
+}
+else if(lst.get(0).get(i)%15==0){
+println 'fizzbuzz'+"\n"
+}
+else {
+println lst.get(0).get(i)+"\n"
+}
+}

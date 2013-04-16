@@ -1,0 +1,45 @@
+class Employee{
+def name,age,salary
+def Employee(nm,ag,sl){
+name=nm
+age=ag
+salary=sl
+}
+public String toString(){
+return name+"\t"+age+"\t"+salary+"\n";
+}
+public static void main(String...ag){
+List<Employee> lst=new ArrayList<Employee>();
+lst<<new Employee('akash',25,50000)
+lst<<new Employee('priyanka',19,40000)
+lst<<new Employee('kapil',29,70000)
+lst<<new Employee('ankit',27,10000)
+lst<<new Employee('deepanshu',29,20000)
+lst<<new Employee('kapish',45,26000)
+//find employee with salary less than 30000
+println 'employee having salary less than 30000 :'
+lst.each{
+if(it.salary<30000){
+print it.name+"\t"
+}
+}
+println ""
+Employee e=lst[0]
+lst.each{
+if(it.age>e.age){
+e=it
+}
+}
+println 'oldest employee is'+"\t"+e.name;
+Employee e1=lst[0]
+lst.each{
+if(it.age<e.age){
+e=it
+}
+}
+println 'youngest employee is'+"\t"+e.name+"\n";
+//list of all employees
+println 'the list of all employee'
+println lst;
+}
+}

@@ -1,0 +1,7 @@
+//table of 2 and 12
+lst=[1..10]
+for(i in 0..9){
+print lst.get(0).get(i)*2
+print "\t"
+println lst.get(0).get(i)*12
+}

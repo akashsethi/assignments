@@ -1,0 +1,5 @@
+List lst=new ArrayList();
+lst[11]="myelement"
+println lst[11]
+println lst.get(4)
+println lst

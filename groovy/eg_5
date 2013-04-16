@@ -1,0 +1,2 @@
+lst=[1,2,3,4,5]
+lst.each{if( lst.indexOf(it)%2==0){print it}}
