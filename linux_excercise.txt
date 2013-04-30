@@ -1,0 +1,26 @@
+
+alias akash="ls-a | wc "
+
+ln -s akash/test
+
+env MY_HOME = /home/akash
+
+PATH= ~/myScripts:$PATH
+
+sudo apt-get install cheese
+
+grep -c intelligrape abc.txt
+
+find -exec grep -l "intelligrape" {} \;
+
+wc -l file.txt
+
+scp intelligrape@qa3.intelligrape.net:/home/intelligrape/downloads.intelligrape.com/books
+
+vim c.txt and press i to insert mode and then write the text "This is a sample file, welcome to intelligrape" then press esc : wq
+
+scp file intelligrape@qa3.intelligrape.net:~/
+
+mv b1 akash
+
+cp a.txt /tmp/b.txt
