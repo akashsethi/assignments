@@ -1,6 +1,6 @@
 package com.grailsinaction
 
-class DocumentResource {
+class DocumentResource extends Resource{
     String fileName
     String contentType
     static constraints = {

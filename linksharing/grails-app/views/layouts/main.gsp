@@ -18,7 +18,8 @@
 		<r:layoutResources />
 	</head>
 	<body>
-        <g:link action="index">home</g:link>
+        <a href="${createLink(uri: "/")}">Home</a>
+   <!--     <g:link action="index">home</g:link>    -->
 		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>

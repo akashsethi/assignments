@@ -4,9 +4,12 @@ class UserController {
       def scaffold=true
     def readingitem(){
         if (session.user){
-            def readingitem=ReadingItem.findAllByUserAndIsRead(session.user,"yes")
-            render(template: "/user/readingitem",model: [r:readingitem])
-
+          //  def readingitem=ReadingItem.findAllByUserAndIsRead(session.user,"yes")
+          //  render(template: "/user/readingitem",model: [r:readingitem])
+           def user_find=User.findByFirstName(session.user)
+            def reading_item=user_find.topics.resources.readingitems.flatten()
+           render(view: "_readingitem",model: [readingitem:reading_item])
+          //  render reading_item.flatten()
         }
         else{
             render view: "login"
@@ -14,15 +17,17 @@ class UserController {
     }
     def dashboard(){
         if (session.user) {
-            def subscriber=Subscription.findBySubscriber(session.user)
-            def topic=Topic.findByOwner(session.user)
-        render (view: "home" ,model:[c1:topic,c2:subscriber] )
+            def user_find=User.findByFirstName(session.user)
+            def subscriber=user_find.subscriptions
+            def topic=user_find.topics
+        render (view: "home" ,model:[ownedtopic:topic,c2:subscriber] )
 
         }
         else{
             render view: "login"
         }
     }
+    def register(){}
     def login(){ }
     def logout(){session.user=null
     flash.message="sign in again"
@@ -44,7 +49,21 @@ class UserController {
             render (view:"login")
         }
 
-    }
 
+    }
+    def registration(){
+        def u=new User(params)
+       if (u.validate()){
+           u.save()
+           render view: "login"
+       }
+        else{
+          render(view: 'register', model: [user: u])
+           }
+
+       }
+
+      //  render "saved"
+    }
     //def index() { }
-}
+

@@ -3,8 +3,8 @@ package com.grailsinaction
 class ReadingItem {
     String isFavourite
     String isRead
-    String user
-    String resources
-    static constraints = {
+    static belongsTo = [resources:Resource]
+    static constraints = {  isRead(inList: ["Yes","No"])
     }
 }
+

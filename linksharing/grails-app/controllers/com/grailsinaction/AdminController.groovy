@@ -12,13 +12,11 @@ class AdminController {
     def index() { }
     def stats(){
 
-        def countUser=User.list()
-  //      List<User>lst=new ArrayList<User>()
-    //    lst<<countUser.subscriptions .count()
-    //    def countSubscription=User.count()
+        def user=User.list()
 
-       render (view:"stats",model:['c1':countUser])
-     // render lst
+
+       render (view:"stats",model:[user:user])
+
 
 
 

@@ -15,6 +15,7 @@ ${flash.message}
         <label>Name:</label><input type="text" name="username"/>
         <label>Password:</label><input type="password" name="password"/>
         <label></label><input type="submit" name="login"/>
+
     </div>
 </g:form>
 </body>
