@@ -53,7 +53,6 @@ class BootStrap {
         resource2.addToReadingitems(new ReadingItem(isFavourite: "YES",isRead: "No")).save(failOnError: true)
         resource3.addToReadingitems(new ReadingItem(isFavourite: "YES",isRead: "Yes")).save(failOnError: true)
         resource4.addToReadingitems(new ReadingItem(isFavourite: "YES",isRead: "No")).save(failOnError: true)
-
         //topic1.addToSubscriptions(new Subscription(subscriber: "kapil",seriousness: "SERIOUS",topic: "grails")).save(failOnError: true)
        // topic1.addToSubscriptions(new Subscription(subscriber: "himanshi",seriousness: "SERIOUS",topic: "grails"))
         //topic2.addToSubscriptions(new Subscription(subscriber: "sanjay",seriousness: "CASUAL",topic: "grails"))

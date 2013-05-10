@@ -17,6 +17,8 @@ class UserController {
     }
     def dashboard(){
         if (session.user) {
+            def userId=User.findByFirstName(session.user)
+             session.userId=userId
             def user_find=User.findByFirstName(session.user)
             def subscriber=user_find.subscriptions
             def topic=user_find.topics
@@ -27,9 +29,15 @@ class UserController {
             render view: "login"
         }
     }
-    def register(){}
+    def register(){
+       render view:"_register"
+    }
+    def reRegister(){
+        render view: "_register"
+    }
     def login(){ }
-    def logout(){session.user=null
+    def logout(){//session.user=null
+        session.invalidate()
     flash.message="sign in again"
     redirect(action:"login")
     }
@@ -48,8 +56,6 @@ class UserController {
             flash.message="invalid username/password"
             render (view:"login")
         }
-
-
     }
     def registration(){
         def u=new User(params)
@@ -58,10 +64,9 @@ class UserController {
            render view: "login"
        }
         else{
-          render(view: 'register', model: [user: u])
+          render(view: '_register', model: [user: u])
            }
-
-       }
+        }
 
       //  render "saved"
     }

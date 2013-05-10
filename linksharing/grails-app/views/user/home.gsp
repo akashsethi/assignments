@@ -5,6 +5,7 @@
 </head>
 <body>
 welcome  ${session.user}
+<g:link controller="user" action="reRegister">Account Setting</g:link>
 <g:link controller='user' action="logout" >Logout</g:link>
 <g:link controller='user' action="readingitem" >Reading Item</g:link>
 <div>

@@ -8,6 +8,13 @@ class User {
     String lastName
     String gender
     Date dateOfBirth
+    static mapping = {
+        table 'UserProfile'
+        firstName(column: 'fname')
+        lastName(column: 'lname')
+        version(false)
+
+    }
   //  Date dateCreated
    // Date lastUpdated
     static hasMany = [subscriptions: Subscription, topics: Topic]
