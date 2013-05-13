@@ -13,8 +13,7 @@ class User {
         firstName(column: 'fname')
         lastName(column: 'lname')
         version(false)
-
-    }
+        }
   //  Date dateCreated
    // Date lastUpdated
     static hasMany = [subscriptions: Subscription, topics: Topic]

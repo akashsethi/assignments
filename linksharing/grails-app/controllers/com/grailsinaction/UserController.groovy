@@ -57,18 +57,23 @@ class UserController {
             render (view:"login")
         }
     }
-    def registration(){
-        def u=new User(params)
-       if (u.validate()){
+    def registration(RegisterCommand registerCommand ){
+        def u=new User()
+        if (registerCommand.validate()){
+
+           u.properties=params
            u.save()
            render view: "login"
-       }
+         }
         else{
-          render(view: '_register', model: [user: u])
+         render view: "_register" ,model: [er:registerCommand]
            }
         }
 
+
+
       //  render "saved"
     }
+
     //def index() { }
 

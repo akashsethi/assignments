@@ -13,10 +13,10 @@
     <title>registration</title>
 </head>
 <body>
-<g:hasErrors bean="${user}">
+<g:hasErrors bean="${er}">
     <ul>
-        <g:eachError var="err" bean="${user}">
-            <li><g:message error="${err}" /></li>
+        <g:eachError var="err" bean="${er}">
+            <li><g:message error="${err}"/></li>
         </g:eachError>
     </ul>
 </g:hasErrors>
@@ -27,7 +27,7 @@ ${flash.message}
 <g:form name="register" action="registration">
     <div style="width: 200px">
 
-        <div>  <label>Email</label><g:textField name="email" value="${session.userId}"></g:textField> </div>
+        <div>  <label>Email</label><g:textField name="email"></g:textField> </div>
         <div><label>Password</label><g:passwordField name="password"/></div>
         <div><label>Conform Password</label><g:passwordField name="conformPassword"/></div>
         <div><label>FirstName</label><g:textField name="firstName"/></div>
