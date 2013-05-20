@@ -62,15 +62,19 @@ class TopicController {
             .save(failOnError: true)
         redirect(controller: 'user',action: 'dashboard')
     }
-    def download(){
-    def file = new File("home/akash/akki.txt")
+    def downloadFile(){
 
-    if (file.exists()) {
-        response.setContentType("application/octet-stream")
-        response.setHeader("Content-disposition", "filename=${file.name}")
-        response.outputStream << file.bytes
-        return
     }
+    def download(){
+    def file = new File(params.files)
+        println file
+       byte[] bytes =file.bytes
+        // create the bytes from some source
+        response.setHeader("Content-disposition", "attachment; filename=" + 'akash')
+        response.contentType ="application/octet-stream"
+        response.contentLength = bytes.length
+        response.outputStream << bytes
+        redirect(controller: 'user',action: 'dashboard')
     }
     def MaxSubscribed(){
         def topic=Topic.findAllByVisibility('PUBLIC')

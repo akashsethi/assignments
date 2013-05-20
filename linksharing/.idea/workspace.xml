@@ -75,28 +75,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TopicController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TopicController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/grailsinaction/TopicController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="74" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.65900385">
+            <state line="60" column="132" selection-start="1818" selection-end="1818" vertical-scroll-proportion="-5.869565">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subscribe.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/topic/subscribe.gsp">
+      <file leaf-file-name="downloadFile.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/topic/downloadFile.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="82" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
+            <state line="15" column="38" selection-start="331" selection-end="331" vertical-scroll-proportion="-4.787234">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/user/home.gsp">
+      <file leaf-file-name="newTopic.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/topic/newTopic.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="64" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +108,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="49" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+            <state line="14" column="49" selection-start="404" selection-end="404" vertical-scroll-proportion="-4.7727275">
               <folding />
             </state>
           </provider>
@@ -117,7 +117,7 @@
       <file leaf-file-name="DocumentResourceController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/grailsinaction/DocumentResourceController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="57" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
+            <state line="18" column="57" selection-start="565" selection-end="565" vertical-scroll-proportion="-11.608696">
               <folding />
             </state>
           </provider>
@@ -135,7 +135,7 @@
       <file leaf-file-name="upload.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/documentResource/upload.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="5" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
+            <state line="21" column="5" selection-start="574" selection-end="574" vertical-scroll-proportion="-6.7021275">
               <folding />
             </state>
           </provider>
@@ -153,10 +153,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BootstrapService.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BootstrapService.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/com/grailsinaction/BootstrapService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="125" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
+            <state line="40" column="78" selection-start="3121" selection-end="3121" vertical-scroll-proportion="0.33944955">
               <folding />
             </state>
           </provider>
@@ -184,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/services/com/grailsinaction/UserService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/topic/newTopic.gsp" />
         <option value="$PROJECT_DIR$/grails-app/services/com/grailsinaction/TopicService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/com/grailsinaction/ApplicationFilters.groovy" />
@@ -199,6 +198,7 @@
         <option value="$PROJECT_DIR$/grails-app/domain/com/grailsinaction/Subscription.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com/grailsinaction/UserController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/user/home.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/topic/downloadFile.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com/grailsinaction/TopicController.groovy" />
       </list>
     </option>
@@ -1107,16 +1107,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/util/reading.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/spring/resources.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/com/grailsinaction/ReadingItem.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
@@ -1153,29 +1143,9 @@
         <state line="22" column="64" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/grailsinaction/Topic.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/grailsinaction/DocumentResourceController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="57" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/grailsinaction/UserController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="111" column="4" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/documentResource/upload.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/com/grailsinaction/Subscription.groovy">
@@ -1188,11 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/com/grailsinaction/BootstrapService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="125" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/com/grailsinaction/Resource.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
@@ -1201,9 +1166,54 @@
         <state line="5" column="30" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/topic/newTopic.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/documentResource/upload.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="5" selection-start="574" selection-end="574" vertical-scroll-proportion="-6.7021275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/topic/downloadFile.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="331" selection-end="331" vertical-scroll-proportion="-4.787234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/grailsinaction/DocumentResourceController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="57" selection-start="565" selection-end="565" vertical-scroll-proportion="-11.608696">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/grailsinaction/TopicController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="74" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.65900385">
+        <state line="60" column="132" selection-start="1818" selection-end="1818" vertical-scroll-proportion="-5.869565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/grailsinaction/Topic.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="49" selection-start="404" selection-end="404" vertical-scroll-proportion="-4.7727275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/grailsinaction/BootstrapService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="78" selection-start="3121" selection-end="3121" vertical-scroll-proportion="0.33944955">
           <folding />
         </state>
       </provider>
