@@ -1,10 +1,10 @@
 package com.grailsinaction
 
 class DocumentResource extends Resource{
-    String fileName
-    String contentType
+    byte[] fileName
+    //String contentType
     static constraints = {
-        fileName (blank:false)
-        contentType (blank:false)
+        fileName(maxSize: 1024*1024*2)
+       // contentType (blank:false)
     }
 }

@@ -27,7 +27,9 @@ ${flash.message}
 <g:form name="register" action="registration">
     <div style="width: 200px">
 
-        <div>  <label>Email</label><g:textField name="email"></g:textField> </div>
+        <div>  <label>Email</label><g:textField name="email"></g:textField>
+
+        </div>
         <div><label>Password</label><g:passwordField name="password"/></div>
         <div><label>Conform Password</label><g:passwordField name="conformPassword"/></div>
         <div><label>FirstName</label><g:textField name="firstName"/></div>
